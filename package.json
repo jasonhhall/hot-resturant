@@ -1,0 +1,22 @@
+{
+  "name": "hot-resturant",
+  "version": "1.0.0",
+  "description": "hot-resturant",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonhhall/hot-resturant.git"
+  },
+  "author": "jhall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonhhall/hot-resturant/issues"
+  },
+  "homepage": "https://github.com/jasonhhall/hot-resturant#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
