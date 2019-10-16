@@ -16,18 +16,18 @@ app.use(express.json());
 // =============================================================
 var currentReservation = [
   {
-    resName: "Jason Hall",
-    resPhoneNumber: "615-111-2222",
-    resEmailAddress: "Jhall@test.net",
-    res_id: "jhall-10-16-2019"
+    customerName: "Jason Hall",
+    phoneNumber: "615-111-2222",
+    customerEmail: "Jhall@test.net",
+    customerID: "jhall-10-16-2019"
   }
 ];
 var waitingList = [ 
     {
-        resName: "Kate Rodgers",
-        resPhoneNumber: "615-333-4444",
-        resEmailAddress: "Krodgers@test.net",
-        res_id: "krodger-10-16-2019"
+        customerName: "Kate Rodgers",
+        phoneNumber: "615-333-4444",
+        customerEmail: "Krodgers@test.net",
+        customerID: "krodger-10-16-2019"
     }
 ];
 
@@ -49,12 +49,12 @@ app.get("/tables", function(req, res) {
 
 // Displays all current reservation
 app.get("/api/tables", function(req, res) {
-  return res.json(characters);
+  return res.json(currentReservation);
 });
 
 // Displays all waiting list
 app.get("/api/waitlist", function(req, res) {
-    return res.json(characters);
+    return res.json(waitingList);
   });
 
 
